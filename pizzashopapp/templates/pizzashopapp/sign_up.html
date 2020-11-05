@@ -1,0 +1,15 @@
+{% extends 'base_sign_in.html'%}
+{% load bootstrap4 %}
+{% block title %}Войти{% endblock %}
+{% block content %}
+<form class="" method="POST" enctype="multipart/form-data">
+  {% block heading %}пиццерия - страница входа!{% endblock %}
+  {% csrf_token %}
+  <h3>Валюха</h3>
+  {% bootstrap_form user_form %}
+  <h3>Пицца</h3>
+  {% bootstrap_form pizzashop_form %}
+  <button type="submit" class="btn btn-red float-right">Зарегистрировать</button>
+  <a href="{% url 'login' %}">Войти</a>
+</form>
+{% endblock %}

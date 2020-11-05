@@ -1,0 +1,5 @@
+/media
+/pizzashopapp/migrations
+/pizzashopapp/static
+*.pyc
+db.sqlite3
